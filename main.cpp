@@ -22,14 +22,13 @@ void time() {
 
 int main() {
     cout
-            << "Aloha! Now you can find out how fast you type. Just press enter to continue, the timer get start instantly, so get ready\n"
+            << "Aloha! Now you can find out how fast you type. Just press enter to continue, the timer get start instantly, so get ready"
             << "P.S. Press enter twice when you`re done.\n";
     string h;
     getline(cin, h);
-    while (h == " ") {
+    while (h == "") {
         time();
         getline(cin, h);
-        cout << h << "   h\n";
     }
     return 0;
 }
